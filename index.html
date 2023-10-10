@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&B Remodeling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="shortcut icon" href="./Assets/logo.JPG" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+
+<body class="bg-[#f5f5f5]">
+
+  
+  <div id="menu" class="bg-[#f5f5f5] fixed z-20 flex items-center hidden justify-center w-full h-full">
+    <ul class="z-4 text-4xl space-y-12">
+      <li class="text-[#A26028]">Home</li>
+      <li class="text-[#1E1E1E]">About</li>
+      <li class="text-[#1E1E1E]">Services</li>
+      <li class="text-[#1E1E1E]">Work</li>
+      <li class="text-[#1E1E1E]">Contact</li>
+    </ul>
+  </div>
+
+  <div id="chat" class="flex items-center cursor-pointer text-xl space-x-2 bg-[#A26028] text-white fixed right-8 bottom-0 z-50 px-10 py-3" >
+    <div><i class="fa-solid fa-message"></i></div>
+    <div>Let's Chat!</div>
+  </div>
+
+  <nav class="flex justify-between items-center pr-4 pl-2 py-10 md:py-14 md:px-[5%] sticky top-0 z-30 bg-[#f5f5f5]">
+    <div id="logo" class="flex items-center justify-center space-x-2">
+      <div><img src="./Assets/logo.JPG" alt=""></div>
+      <div class="font-semibold text-2xl text-[#1E1E1E]">R&B Remodeling</div>
+    </div>
+
+    <div class="flex items-center">
+      <div id="bar" class="flex items-center justify-center flex-col space-y-2.5 cursor-pointer sm:hidden">
+        <div id="bar1" class="h-1 w-10 bg-black rounded origin-top"></div>
+        <div id="bar2" class="h-1 w-10 bg-black rounded"></div>
+        <div id="bar3" class="h-1 w-10 bg-black rounded origin-top"></div>
+      </div>
+      <div id="x" class="text-5xl hidden">X</div>
+    </div>
+
+
+    <div id="navbar" class="hidden sm:block font-[extralight]">
+      <ul class="flex items-center space-x-4 text-sm font-family-[Poppins extralight]">
+        <li class="text-[#A26028] cursor-pointer"><a href="#">Home</a></li>
+        <li class="text-[#1E1E1E] cursor-pointer"><a href="#">About</a></li>
+        <li class="text-[#1E1E1E] cursor-pointer"><a href="#">Services</a></li>
+        <li class="text-[#1E1E1E] cursor-pointer"><a href="#">Work</a></li>
+        <li class="text-[#1E1E1E] cursor-pointer"><a href="#">Contact</a></li>
+        <li class="text-[#1E1E1E]">123-456-7890</li>
+      </ul>
+    </div>
+
+  </nav>
+  <div id="num" class="sm:hidden">
+    <h1 class="text-[#1E1E1E] text-sm pl-4 -mt-8 font-[extralight]">123-456-7890</h1>
+  </div>
+
+  <!-- --------------------------------------------- -->
+
+  <div id="home"
+    class="h-full py-14 md:opacity-95 mt-8 px-4 flex items-center flex-col justify-center md:block md:pl-8 md:mx-[5%]"
+     data-scroll-section data-scroll-speed="4">
+
+    <h1 class="text-[1.7rem] md:text-[4.5rem] text-white font-black mb-2 w-1/2 text-center md:text-left" data-scroll-section data-scroll-speed="5">Exceptional
+      Home Remodeling & Renovations
+    </h1>
+
+    <span class="bg-white p-3 text-center cursor-pointer text-[#1E1E1E] text-sm" data-scroll-section data-scroll-speed="10">
+      Get a Free Estimate
+    </span>
+  </div>
+
+  <!-- ----------------------------------------------- -->
+
+  <div id="page2" class="my-16 md:flex items-center justify-between flex-row-reverse md:mx-[5%]" data-scroll-section>
+
+    <div class="left text-center mx-4 md:text-left">
+      <h1 class="text-4xl md:text-[2.5rem] md:ml-12 md:text-left text-[#1E1E1E]">The Leading Bay Area Remodeling Company
+      </h1>
+
+      <p class="my-6 text-xl md:ml-12 md:text-sm md:text-left md:leading-[25px]">I'm a paragraph. Click here to add your
+        own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
+        changes to the font.
+      </p>
+      <button class="bg-[#1E1E1E] text-white text-lg px-4 py-3 md:py-1 md:ml-12 font-[extralight]">More About Us</button>
+    </div>
+
+    <div class="right mx-auto mt-8 w-full md:w-[90rem] h-screen" id="kitchen1" data-scroll-container
+      data-scroll-speed="5">
+    </div>
+  </div>
+
+  <!-- ---------------------------------------- ------->
+
+  <div id="page3" class="md:px-[5%] md:py-12" data-scroll-section>
+    <h1 class="text-[2rem] text-center mb-8 text-[#1E1E1E] md:text-[2.5rem] md:py-20">Why Choose Us</h1>
+
+    <div id="choose" class="space-y-12 md:flex justify-between items-center md:space-y-0">
+
+      <div id="one" class="flex items-center justify-center flex-col space-y-2 md:space-y-12">
+        <h1 class="text-xl text-center text-[#A26028] w-1/4 md:w-1/2">Easy Financing</h1>
+        <p class="text-center w-4/5">I'm a paragaph, click here to add your own text</p>
+      </div>
+
+      <div id="two" class="flex items-center justify-center flex-col space-y-2 md:space-y-12">
+        <h1 class="text-xl text-center text-[#A26028] w-1/2">Free, At Home Consultations</h1>
+        <p class="text-center w-4/5">I'm a paragaph, click here to add your own text</p>
+      </div>
+
+      <div id="third" class="flex items-center justify-center flex-col space-y-2 md:space-y-12">
+        <h1 class="text-xl text-center text-[#A26028] w-1/2 md:w-7/12">Award Winning Service</h1>
+        <p class="text-center w-4/5">I'm a paragaph, click here to add your own text</p>
+      </div>
+
+      <div id="four" class="flex items-center justify-center flex-col space-y-2 md:space-y-12">
+        <h1 class="text-xl text-center text-[#A26028] w-7/12">Licensed & Insured</h1>
+        <p class="text-center w-4/5">I'm a paragaph, click here to add your own text</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ------------------------------------ ----------->
+
+  <div id="page4"
+    class="bg-[#dbdbdb40] h-full pt-12 pt-12 pb-12 md:pt-0 md:pb-20  mt-8 md:px-[5%] flex items-center justify-center flex-col" data-scroll-section>
+
+    <h1 class="text-center pb-8 text-2xl md:text-[2.5rem] text-[#1E1E1E] md:py-20">Our Services Include</h1>
+
+    <div class="md:flex items-center justify-between md:space-x-12" data-scroll-speed="10">
+
+      <div id="kitchen" class="w-screen md:w-[20rem] h-screen relative">
+        <a href="#" class=" text-2xl absolute top-1/2 left-[40%] md:left-[32%] text-white">Kitchens</a>
+      </div>
+
+      <div id="bathroom" class="w-screen md:w-[20rem] h-screen relative">
+        <a href="#" class=" text-2xl absolute top-1/2 left-[40%] md:left-[32%] text-white">Bathrooms</a>
+      </div>
+
+      <div id="interior" class="w-screen md:w-[20rem] h-screen relative">
+        <a href="#" class=" text-2xl absolute top-1/2 left-[40%] md:left-[32%] text-white">Interiors</a>
+      </div>
+
+    </div>
+
+    <button
+      class="bg-[#1E1E1E] text-white text-sm py-2 font-[extralight] md:py-2.5 px-2 md:px-6 mt-12 text-center hover:bg-[#A26028] transition-all">See
+      All Services</button>
+  </div>
+<!-- ---------------------------------------------------------- -->
+  <div id="page5" class="mt-32 mb-16" data-scroll-section>
+    <h1 class="text-3xl text-center md:text-[2.5rem]">Satisfied Customers</h1>
+
+    <div id="testimonials" class="px-12 py-12 md:flex items-center justify-between">
+
+      <div id="t1" class="pt-12">
+        <div class="text-center pb-10"><i class="fa-solid fa-quote-right text-center text-4xl"></i></div>
+
+        <div class="md:flex flex-col-reverse items-center">
+          <h1 class="text-[#A26028] text-center pb-4 md:text-xl md:mt-8">Dave Reddington</h1>
+          <p class="text-center text-[#1E1E1E] text-sm md:px-24 md:text-md leading-7">“I'm a testimonial. Click to edit
+            me and add text that says something nice about you and your services. Let your customers review you and tell
+            their friends how great you are.”</p>
+        </div>
+
+      </div>
+
+
+
+      <div id="t2" class="pt-12">
+        <div class="text-center pb-10"><i class="fa-solid fa-quote-right text-center text-4xl"></i></div>
+
+        <div class="md:flex flex-col-reverse items-center">
+          <h1 class="text-[#A26028] text-center pb-4 md:text-xl md:mt-8">Amelia Banks</h1>
+          <p class="text-center text-[#1E1E1E] text-sm md:px-24 md:text-md leading-7">“I'm a testimonial. Click to edit
+            me and add text that says something nice about you and your services. Let your customers review you and tell
+            their friends how great you are.”</p>
+        </div>
+
+      </div>
+
+
+
+      <div id="t3" class="pt-12">
+        <div class="text-center pb-10"><i class="fa-solid fa-quote-right text-center text-4xl"></i></div>
+
+        <div class="md:flex flex-col-reverse items-center">
+          <h1 class="text-[#A26028] text-center pb-4 md:text-xl md:mt-8">Kenny Stutes</h1>
+          <p class="text-center text-[#1E1E1E] text-sm md:px-24 md:text-md leading-7">“I'm a testimonial. Click to edit
+            me and add text that says something nice about you and your services. Let your customers review you and tell
+            their friends how great you are.”</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+<!-- -------------------------------------------------------------- -->
+  <div id="page6" class="bg-[#1e1e1e] h-full py-12 mb-28 text-white md:flex  justify-between md:px-12" data-scroll-section>
+
+    <div id="text" class="px-8 md:pt-14 md:w-1/2">
+      <h1 class="text-[2.5rem] w-8/12">Let's Discuss Your Next Project</h1>
+
+      <p class="text-2xl md:text-sm w-9/12 md:w-1/2 pt-6 pb-12 leading-10">Fill out the form, or call us to
+        set up a free in-home consultation.
+        ​</p>
+
+      <p class="text-2xl md:text-sm pb-4">Service Areas:</p>
+      <p class="text-2xl md:text-sm">San Francisco, Santa Clara, Alameda, San Mateo</p>
+
+      
+    <div id="info" class="text-sm space-y-4 pt-6 pb-4 hidden md:block">
+      <p class="text-center md:text-left">500 Terry Francine Street San</p>
+      <p class="text-center md:text-left">Francisco, CA 94158</p>
+      <p class="text-center md:text-left">info@mysite.com</p>
+      <p class="text-center md:text-left">123-456-7890</p>
+    </div>
+
+    </div>
+
+    <div id="form" class="md:w-1/2 font-[extralight]">
+
+      <form action="#" class="bg-transparent text-[22px] md:text-sm py-12 px-12">
+
+
+        <div class="md:flex items-center justify-between md:pt-6 md:w-full">
+
+          <div>
+            <label for="FName">First Name*</label>
+            <input class="bg-transparent border-white border-b-[1px] outline-0 focus:border-b-red-500  py-4 block w-[90%] md:w-full"
+              type="text" required>
+          </div>
+
+          <div class="pt-4 md:pt-0">
+            <label for="LName">Last Name*</label>
+            <input class="bg-transparent border-white border-b-[1px] outline-0 focus:border-b-red-500  py-4 block w-[90%] md:w-full"
+              type="text" required>
+          </div>
+        </div>
+
+        <div class="md:flex items-center justify-between md:pt-6 md:w-full">
+          <div class="pt-4 md:pt-0">
+            <label for="email">Email*</label>
+            <input class="bg-transparent border-white border-b-[1px] outline-0 focus:border-b-red-500  py-4 block w-[90%] md:w-full"
+              type="email" name="email" id="email" required>
+          </div>
+
+          <div class="pt-4 md:pt-0">
+            <label for="phone">Phone</label>
+            <input class="bg-transparent border-white border-b-[1px] outline-0 focus:border-b-red-500  py-4 block w-[90%] md:w-full"
+              type="number">
+          </div>
+        </div>
+
+
+        <div class="pt-4 md:pt-6">
+          <label for="address">Address</label>
+          <input class="bg-transparent border-white border-b-[1px] outline-0 focus:border-b-red-500  py-4 block w-[90%] md:w-full"
+            type="text">
+        </div>
+
+
+        <div class="pt-4 md:pt-6">
+          <label for="sub">Subject</label>
+          <input class="bg-transparent border-white border-b-[1px] outline-0 focus:border-b-red-500  py-4 block w-[90%] md:w-full"
+            type="text">
+        </div>
+
+
+        <div class="pt-4 md:pt-6">
+          <label for="message">Type your message here</label>
+          <textarea class="bg-transparent border-white border-b-[1px] outline-0 focus:border-b-red-500  py-1 block w-[90%] md:w-full"
+            name="message" id="message" cols="30" rows="5"></textarea>
+        </div>
+
+
+        <div class="pt-4 md:pt-6">
+          <button class="bg-white text-[#1E1E1E] w-[90%] md:w-full py-4" type="submit">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div id="info" class="text-2xl-base space-y-4 pt-6 pb-4 md:hidden">
+      <p class="text-center">500 Terry Francine Street San</p>
+      <p class="text-center">Francisco, CA 94158</p>
+      <p class="text-center">info@mysite.com</p>
+      <p class="text-center">123-456-7890</p>
+    </div>
+
+  </div>
+<!-- --------------------------------------------------------------- -->
+  <div id="page7" class="relative" class="pt-12" data-scroll-section>
+
+    <div id="achievements"
+      class="flex items-center justify-center flex-col space-y-16 md:flex-row md:space-x-20 md:space-y-0">
+
+      <div>
+        <img src="./Assets/winner.webp" alt="" class="w-52 md:w-full">
+      </div>
+
+      <div>
+        <img src="./Assets/top choices.webp" alt="" class="w-52 md:w-full">
+      </div>
+
+      <div>
+        <img src="./Assets/100.webp" alt="" class="w-52 md:w-full">
+      </div>
+
+      <div>
+        <img src="./Assets/MeI8.webp" alt="" class="w-52 md:w-full">
+      </div>
+
+    </div>
+
+
+    <div
+      class="flex items-center space-y-4 justify-center flex-col md:space-y-0 md:flex-row-reverse md:justify-between md:px-20 md:pt-36 md:pb-12">
+      <div id="social" class="flex items-center space-x-6">
+        <p><a href="#" target="_blank"><i class="fa-brands fa-facebook-f text-3xl md:text-xl"></i></a></p>
+        <p><a href="#" target="_blank"><i class="fa-brands fa-twitter text-3xl md:text-xl"></i></a></p>
+        <p><a href="#" target="_blank"><i class="fa-brands fa-youtube text-3xl md:text-xl"></i></a></p>
+      </div>
+
+      <div id="wix" class="w-1/2 text-center text-[#1E1E1E] text-[15px] font-[extralight]">
+        © 2035 by M&B Remodeling. Powered and secured by <span class="underline">Wix</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

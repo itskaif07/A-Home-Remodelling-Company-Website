@@ -1,0 +1,44 @@
+@font-face{
+    font-family: extralight;
+    src: url(./Assets/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face{
+    font-family: semibold;
+    src: url(./Assets/Poppins/Poppins-SemiBold.ttf);
+}
+
+body{
+    font-family: semibold;
+}
+
+
+span{
+    font-family: extralight;
+}
+
+p{
+    font-family: extralight;
+}
+
+
+#home{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./Assets/bg-one.jpg) no-repeat center center/cover;
+    background-attachment: scroll;
+}
+
+#kitchen1{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./Assets/kitchen1.jpg) no-repeat center center/cover;
+}
+
+#kitchen{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./Assets/kitchen1.jpg) no-repeat center center/cover;
+}
+
+#bathroom{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./Assets/bathroom1.jpg) no-repeat center center/cover;
+}
+
+#interior{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./Assets/interior1.jpg) no-repeat center center/cover;
+}
